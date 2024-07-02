@@ -1,0 +1,21 @@
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.getInTouch {
+    margin-left: 12px;
+}
+
+@media (max-width:  768px) {
+    .getInTouch {
+      display: none;
+    }
+}
+
+@media (max-width:  1280px) {
+    .header-row {
+        margin-top: 24px;
+    }
+}

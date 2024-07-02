@@ -1,9 +1,12 @@
-
+import './styles/general.css';
+import Header from './components/header/Header';
+import Mainsec from './components/main/Mainsec';
 
 function App() {
   return (
     <div className="App">
-      <h1>Start</h1>
+      <Header />
+      <Mainsec />
     </div>
   );
 }
