@@ -6,7 +6,7 @@
     font-size: 36px;
     line-height: 100%;
     text-transform: uppercase;
-    margin-top: 146px;
+    margin-top: 210px;
 }
 
 p {
@@ -42,6 +42,35 @@ p {
     padding-top: 8px;
     padding-bottom: 36px;
 }
+
+.ogImage {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ogImage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .ogImage img {
+      height: 200px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1279px) {
+    .ogImage img {
+      height: 348px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .ogImage img {
+      height: 524px;
+    }
+  }
 
 /* @media (min-width:  768px) {
     .mainsec-wrapper {

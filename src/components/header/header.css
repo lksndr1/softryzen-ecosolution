@@ -1,21 +1,79 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header.scrolled {
+    background-color: #fff;
+}
+
 .header-row {
     display: flex;
     justify-content: space-between;
     margin-top: 36px;
 }
 
-.getInTouch {
+.header-menu {
+    display: flex;
+}
+
+/* Logo hover */
+.header-logo-hover {
+    display: none;
+}
+  
+.logo:hover .header-logo {
+    display: none;
+}
+  
+.logo:hover .header-logo-hover {
+    display: block;
+}
+
+.getInTouch, .getInTouch-hover {
     margin-left: 12px;
 }
 
-@media (max-width:  768px) {
+/* Get in touch hover */
+.getInTouch-hover {
+    display: none;
+}
+
+.getInTouch-wrapper:hover .getInTouch {
+    display: none;
+}
+
+.getInTouch-wrapper:hover .getInTouch-hover {
+    display: block;
+}
+
+/* Burger-menu hover */
+.burger-icon-hover {
+    display: none;
+}
+
+.burger-wrapper:hover .burger-icon {
+    display: none;
+}
+
+.burger-wrapper:hover .burger-icon-hover {
+    display: block;
+}
+
+
+
+
+@media (max-width: 768px) {
     .getInTouch {
       display: none;
     }
 }
 
-@media (max-width:  1280px) {
+@media (min-width: 1280px) {
     .header-row {
         margin-top: 24px;
+        margin-top: 37px;
     }
 }
