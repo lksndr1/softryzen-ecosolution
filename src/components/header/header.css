@@ -19,6 +19,10 @@
     display: flex;
 }
 
+.logo {
+    cursor: pointer;
+}
+
 /* Logo hover */
 .header-logo-hover {
     display: none;
@@ -34,6 +38,7 @@
 
 .getInTouch, .getInTouch-hover {
     margin-left: 12px;
+    cursor: pointer;
 }
 
 /* Get in touch hover */
@@ -47,6 +52,10 @@
 
 .getInTouch-wrapper:hover .getInTouch-hover {
     display: block;
+}
+
+.burger-wrapper {
+    cursor: pointer;
 }
 
 /* Burger-menu hover */
