@@ -1,4 +1,6 @@
 import './about.css';
+import solar from '../../img/man-worker-firld-by-solar-panels1.png';
+import wind from '../../img/wind-farms-fields1.png'
 
 const About = () => {
     return (
@@ -39,6 +41,12 @@ const About = () => {
                         </div>
                         <div className="value-line"></div>
                         <p>we are aware that the results of our work have an impact on our lives and the lives of future generations</p>
+                    </div>
+                    <div className="solar-photo grid-photo">
+                        <img src={solar} />
+                    </div>
+                    <div className="wind-photo grid-photo">
+                        <img src={wind} />
                     </div>
                     <div className="innovation value">
                         <div className="value-heading">

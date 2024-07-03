@@ -81,3 +81,15 @@
 .header .dropdown-menu .instagram:hover svg path {
     stroke: #97D28B;
 }
+
+@media (min-width: 768px) {
+	.header .dropdown-menu {
+		right: 30px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.header .dropdown-menu {
+		right: 100px;
+	}
+}
