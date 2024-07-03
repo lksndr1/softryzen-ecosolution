@@ -20,9 +20,7 @@ const Header = () => {
     const closeMenu = () => {
         setMenuOpen(false);
     };
-    // Backdrop-filter for body, when opened burger-menu:
 
-    
 
     // Changed header colour on scroll;
     useEffect(() => {
