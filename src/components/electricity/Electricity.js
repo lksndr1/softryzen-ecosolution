@@ -5,7 +5,7 @@ const Electricity = () => {
         <section className="electricity">
             <div className="container">
                 <div className="heading">
-                    <h2>Electricity we produced for all time</h2>
+                    <h2>Electricity we produced<br/>for all time</h2>
                 </div>
                 <div className="electricity-line"></div>
                 <div className='counter'>

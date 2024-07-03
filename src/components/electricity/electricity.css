@@ -36,3 +36,27 @@
     text-align: center;
     color: #173d33;
 }
+
+@media (min-width: 768px) {
+    .counter {
+        gap: 24px;
+    }
+    .numbers {
+        font-size: 100px;
+    }
+    .kWh {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .counter {
+        gap: 24px;
+    }
+    .numbers {
+        font-size: 164px;
+    }
+    .kWh {
+        font-size: 48px;
+    }
+}
