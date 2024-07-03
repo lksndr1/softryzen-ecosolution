@@ -1,0 +1,29 @@
+.values-wrapper {
+    margin-top: 36px;
+}
+
+.value {
+    padding: 13px 12px 12px 12px;
+    background: #EAEDF1;
+}
+
+.value-heading {
+    display: flex;
+    gap: 8px;
+}
+
+.value-line {
+    border: none;
+    height: 1px;
+    background: #97d28b;
+    margin-top: 33px;
+    margin-bottom: 12px;
+}
+
+.value p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    text-align: justify;
+}
