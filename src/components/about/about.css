@@ -1,3 +1,10 @@
+.about-line {
+    display: none;
+    border: none;
+    width: 1px;
+    height: 110px;
+    background: #97d28b;
+}
 .values-wrapper {
     margin-top: 36px;
     display: grid;
@@ -43,7 +50,30 @@
 }
 
 @media (min-width: 768px) {
+    
+    .info-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+
+    .about-heading {
+        margin-top: 0;
+        padding-right: 70px;
+    }
+
+    .about-heading, .about-info {
+        width: 50%;
+    }
+
+    .about-line {
+        display: block;
+        margin: 0 11px 0 11px;
+    }
+        
     .values-wrapper {
+        margin-top: 100px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -73,6 +103,18 @@
 }
 
 @media (min-width: 1280px) {
+    .about-heading {
+        padding-right: 230px;
+    }
+    
+    .about-info {
+        padding-left: 137px;
+    }
+
+    .about-line {
+        height: 87px;
+    }
+
     .values-wrapper {
         grid-column-gap: 48px;
         grid-row-gap: 48px;

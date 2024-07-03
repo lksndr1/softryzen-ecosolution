@@ -7,8 +7,9 @@ const About = () => {
         <section className="about">
             <div className="container">
                 <div className="info-wrapper">
-                    <h2>Main values of our company</h2>
-                    <p>EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world's energy needs.</p>
+                    <h2 className="about-heading">Main values of our company</h2>
+                    <div className="about-line"></div>
+                    <p className="about-info">EcoSolution envisions a world where sustainable energy solutions power a brighter and cleaner future for all. We aspire to be at the forefront of the global shift towards renewable energy, leading the way in innovative technologies that harness the power of nature to meet the world's energy needs.</p>
                 </div>
                 <div className="values-wrapper">
                     <div className="openness value">

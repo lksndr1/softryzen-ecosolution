@@ -1,0 +1,38 @@
+.heading {
+    text-align: center;
+}
+
+.electricity-line{
+    border: none;
+    width: 1px;
+    height: 48px;
+    background: #97d28b;
+    margin: 0 auto;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.numbers {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #97d28b;
+}
+
+.kWh {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #173d33;
+}
