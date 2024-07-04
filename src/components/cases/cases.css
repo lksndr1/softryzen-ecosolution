@@ -29,6 +29,10 @@
     color: #173d33;
 }
 
+.number-photos-grey {
+    color: rgba(23, 61, 51, 0.25);
+}
+
 .arrows {
     display: flex;
     gap: 12px;
@@ -37,11 +41,58 @@
 .arrow-left, .arrow-right {
     width: 66px;
     height: 66px;
+    cursor: pointer;
 }
 
 .arrow-left:hover svg path, .arrow-left:hover svg rect,
 .arrow-right:hover svg path, .arrow-right:hover svg rect {
     stroke: #97D28B;
+}
+
+.slider-img {
+    width: 100%;
+}
+
+.slide-description {
+    background-color: #eaedf1;
+    padding: 24px 12px 12px;
+}
+
+.slide-address-arrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-address{
+    width: 175px;
+}
+
+.slide-address p {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    text-align: justify;
+}
+
+.slider-line {
+    border: none;
+    width: 100%;
+    height: 1px;
+    background: #97d28b;
+    margin-top: 21px;
+}
+
+.slide-type-date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.slide-type-date p {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.04em;
+    text-align: justify;
 }
 
 
