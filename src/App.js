@@ -4,6 +4,7 @@ import Mainsec from './components/main/Mainsec';
 import About from './components/about/About';
 import Electricity from './components/electricity/Electricity';
 import Cases from './components/cases/Cases';
+import Faq from './components/faq/Faq';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Electricity />
       <Cases />
+      <Faq />
       
     </div>
   );
