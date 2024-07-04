@@ -5,6 +5,7 @@ import About from './components/about/About';
 import Electricity from './components/electricity/Electricity';
 import Cases from './components/cases/Cases';
 import Faq from './components/faq/Faq';
+import Contact_us from './components/contact-us/Contact_us';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Electricity />
       <Cases />
       <Faq />
+      <Contact_us />
       
     </div>
   );

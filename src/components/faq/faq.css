@@ -33,13 +33,13 @@
     font-size: 14px;
 }
 
-.contact-us {
+.faq-contact-us {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
 }
-.contact-us p {
+.faq-contact-us p {
     margin-bottom: 12px;
     font-size: 18px;
 }
@@ -67,7 +67,7 @@
         padding-bottom: 0;
     }
 
-    .contact-us {
+    .faq-contact-us {
         grid-area: 3 / 2 / 4 / 3;
         margin-top: auto;
         margin-bottom: 0;
@@ -90,8 +90,8 @@
     }
 
     .faq-heading {
-        width: 398px;
-        margin-left: 137px;
+        width: 535px;
+        padding-left: 137px;
     }
 
     .aq-block {
@@ -106,11 +106,12 @@
         font-size: 16px;
     }
 
-    .contact-us {
-        margin-left: 137px;
+    .faq-contact-us {
+        width: 537px;
+        padding-left: 137px;
     }
 
-    .contact-us p {
+    .faq-contact-us p {
         font-size: 24px;
     }
   }
