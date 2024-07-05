@@ -18,7 +18,7 @@
 }
 
 .contact-address-wrapper {
-    width: 244px;
+    width: 212px;
 }
 
 .socials-img {
@@ -56,7 +56,7 @@ input {
     color: #173d33;
     border-bottom: 1px solid #97d28b;
     padding: 8px 0;
-    margin-bottom: 9px;
+    margin-bottom: 28px;
 }
 
 .error-input input {
@@ -64,10 +64,10 @@ input {
 }
 
 textarea {
-    height: 147px;
+    height: 155px;
     border-bottom: 1px solid #97d28b;
     padding-top: 8px;
-    margin-bottom: 9px;
+    margin-bottom: 16px;
 }
 
 input::placeholder, textarea::placeholder {
@@ -93,13 +93,68 @@ input::placeholder, textarea::placeholder {
     height: 39px;
 }
 
+@media (min-width: 768px) {
+    .contact-us-heading {
+        margin-bottom: 40px;
+    }
+
+    .contacts-form-wrapper {
+        display: flex;
+        gap: 24px;
+    }
+
+    .contacts, .form {
+        width: 50%;
+    }
+
+    .form {
+        padding: 36px 24px;
+    }
+}
+
 @media (min-width: 1280px) {
 
-    /* input {
-        margin-bottom: 28px;
+    .contacts-form-wrapper {
+        gap: 48px;
+    }
+
+    .contact-us-heading {
+        margin-bottom: 120px;
+    }
+
+    .contact-address-wrapper {
+        width: 466px;
+    }
+
+    .img-value {
+        margin: 16px 0 32px;
+    }
+
+    .double-value{
+        margin-bottom: 12px;
+    }
+
+    .img-value p {
+        font-size: 24px;
+    }
+
+    .socials-img {
+        gap: 8px;
+        padding: 0;
+    }
+
+    .form {
+        padding: 48px;
+    }
+
+    input {
+        font-size: 20px;
+        padding-top: 12px;
     }
 
     textarea {
-        height: 149px;
-    } */
+        height: 157px;
+        margin-bottom: 32px;
+        padding-top: 12px;
+    }
 }
