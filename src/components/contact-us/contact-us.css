@@ -1,3 +1,66 @@
 .contact-us-heading {
     text-align: center;
 }
+
+.form {
+    padding: 36px 12px;
+    background: #eaedf1;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    text-align: justify;
+    
+}
+
+input {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    color: #173d33;
+    border-bottom: 1px solid #97d28b;
+    padding: 8px 0;
+    margin-bottom: 9px;
+}
+
+.error-input input {
+  border-color: #d28b8b;;
+}
+
+textarea {
+    height: 147px;
+    border-bottom: 1px solid #97d28b;
+    padding-top: 8px;
+    margin-bottom: 9px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #bdbdbd;
+}
+
+.error {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.04em;
+    text-align: right;
+    color: #D28B8B;
+    margin: 8px 0 6px;
+}
+
+@media (min-width: 1280px) {
+
+    /* input {
+        margin-bottom: 28px;
+    }
+
+    textarea {
+        height: 149px;
+    } */
+}
