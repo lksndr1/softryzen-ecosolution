@@ -1,3 +1,33 @@
+.contacts-type {
+    font-size: 16px;
+}
+
+.img-value {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 8px 0 24px 0;
+}
+
+.double-value{
+    margin-bottom: 12px;
+}
+
+.img-value p {
+    font-size: 20px;
+}
+
+.contact-address-wrapper {
+    width: 244px;
+}
+
+.socials-img {
+    gap: 20px;
+    padding: 12px;
+}
+
+/*----------------------------- Form styling ------------------------*/
+
 .contact-us-heading {
     text-align: center;
 }
@@ -52,6 +82,15 @@ input::placeholder, textarea::placeholder {
     text-align: right;
     color: #D28B8B;
     margin: 8px 0 6px;
+}
+
+.submit-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-wrapper button {
+    height: 39px;
 }
 
 @media (min-width: 1280px) {

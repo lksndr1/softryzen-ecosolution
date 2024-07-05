@@ -44,6 +44,10 @@
     font-size: 18px;
 }
 
+.faq-contact-us button {
+    height: 39px;
+}
+
 @media (min-width: 768px) {
     .faq-grid-container {
         display: grid;
