@@ -101,7 +101,8 @@ p {
   }
 
   .description-wrapper {
-    width: 342px;
+    width: 50%;
+    padding-left: 12px;
     padding-top: 0;
   }
 
@@ -121,8 +122,8 @@ p {
   .email-copyright-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 0;
-    width: 342px;
+    padding: 0 0 0 12px;
+    width: 50%;
   }
 
   .main-copyright {
@@ -142,8 +143,7 @@ p {
     }
 
     .description-wrapper {
-      width: 363px;
-      margin-right: 96px;
+      padding-left: 137px;
     }
 
     .learn-more-wrapper {
@@ -156,7 +156,8 @@ p {
     }
 
     .email-copyright-wrapper {
-      width: 459px;
+      padding: 0 0 0 137px;
+      width: 50%;
     }
 
     .ogImage img {
