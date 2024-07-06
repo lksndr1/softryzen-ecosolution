@@ -1,6 +1,6 @@
 
 .heading-wrapper {
-  margin-top: 210px;
+  margin-top: 222px;
 }
 
 .main-heading {
@@ -92,7 +92,7 @@ p {
   .heading-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 210px;
+    margin-top: 240px;
   }
 
   .main-heading {

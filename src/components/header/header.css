@@ -1,3 +1,5 @@
+
+
 .header {
     position: fixed;
     top: 0;
@@ -12,11 +14,13 @@
 .header-row {
     display: flex;
     justify-content: space-between;
-    margin-top: 36px;
+    margin: 36px 0 36px;
+    height: 40px;
 }
 
 .header-menu {
     display: flex;
+    gap: 12px;
 }
 
 .logo {
@@ -40,7 +44,6 @@
 }
 
 .getInTouch-icon {
-    margin-left: 12px;
     cursor: pointer;
 }
 
@@ -65,6 +68,5 @@
 @media (min-width: 1280px) {
     .header-row {
         margin-top: 24px;
-        margin-top: 37px;
     }
 }

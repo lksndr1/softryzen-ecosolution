@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { ReactComponent as Logo } from '../../img/logo.svg';
-// import logo from '../../img/logo.svg';
-// import logoHover from '../../img/logo-hover.svg';
 import { ReactComponent as GetInTouch } from '../../img/get-in-t.svg';
 import { ReactComponent as MenuArrow } from '../../img/menuArrow.svg';
 import { ReactComponent as Burger } from '../../img/burger.svg';
@@ -57,15 +55,14 @@ const Header = () => {
 
     return (
         <header className={`header ${menuOpen ? 'menu-open' : ''}`}>
+            <div className={`overlay ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}></div>
             <div className="container">
                 <div className="header-row">
                     <div className="logo">
                         <Logo className="header-logo-img" />
                     </div>
                     <div className="header-menu">
-                        <div className="burger-wrapper" onClick={toggleMenu}>
-                            <Burger className="burger-icon"/>
-                        </div>
+                            <Burger className="burger-icon" onClick={toggleMenu}/>
                         <button onClick={(e) => scrollToSection(e, 'contact-us')}>
                             <GetInTouch className="getInTouch-icon" />
                         </button>
