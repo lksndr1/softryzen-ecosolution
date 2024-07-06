@@ -7,14 +7,17 @@
 :root {
 	--font-family: "Fira Sans", sans-serif;
 	--second-family: "Oswald", sans-serif;
-	
+	--dark-green: #173d33;
+	--light-green: #97D28B;
 }
 
 
 html,
 body {
-	color: #173d33;
+	color: var(--dark-green);
 	background-color: #FAFAFF;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h2 {
@@ -33,7 +36,7 @@ h3 {
 	font-size: 16px;
 	line-height: 150%;
 	text-transform: uppercase;
-	color: #173d33;
+	color: var(--dark-green);
 }
 
 .container{

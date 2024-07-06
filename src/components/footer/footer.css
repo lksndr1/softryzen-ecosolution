@@ -1,11 +1,11 @@
 .footer-wrapper {
     margin: 36px 0 24px;
-    border-top: 1px solid #97D28B;
+    border-top: 1px solid var(--light-green);
     position: relative;
 }
 
 .footer-logo-img:hover #ecosolution {
-    fill: #97D28B;
+    fill: var(--light-green);
 }
 
 .logo-topbth-wrapper {
@@ -24,11 +24,11 @@
 }
 
 .to-top-btn svg:hover rect {
-    fill: #173D33;
+    fill: var(--dark-green);
 }
 
 .to-top-btn svg:hover path {
-    stroke: #97D28B;
+    stroke: var(--light-green);
 }
 
 .footer-socials {
@@ -38,11 +38,11 @@
 }
 
 .footer-socials svg:hover path {
-    stroke: #97D28B;
+    stroke: var(--light-green);
 }
 
 .footer-socials svg:hover path[fill] {
-    fill: #97D28B;
+    fill: var(--light-green);
 }
 
 .footer-text {

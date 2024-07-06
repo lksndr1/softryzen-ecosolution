@@ -14,11 +14,11 @@
 }
 
 .img-value svg:hover path {
-    stroke: #97D28B;
+    stroke: var(--light-green);
 }
 
 .img-value svg:hover path[fill] {
-    fill: #97D28B;
+    fill: var(--light-green);
 }
 
 .img-value p {
@@ -61,7 +61,7 @@ input {
     font-weight: 400;
     font-size: 18px;
     letter-spacing: -0.04em;
-    color: #173d33;
+    color: var(--dark-green);
     border-bottom: 1px solid #97d28b;
     padding: 8px 0;
     margin-bottom: 28px;
@@ -105,12 +105,12 @@ input::placeholder, textarea::placeholder {
 }
 
 .send-icon:hover rect[stroke] {
-    fill: #173d33;
-    stroke: #173d33;
+    fill: var(--dark-green);
+    stroke: var(--dark-green);
 }
 
 .send-icon:hover path[fill] {
-    fill: #97D28B;
+    fill: var(--light-green);
 }
 
 @media (min-width: 768px) {

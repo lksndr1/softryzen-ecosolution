@@ -3,7 +3,7 @@
     border: none;
     width: 1px;
     height: 110px;
-    background: #97d28b;
+    background: var(--light-green);
 }
 .values-wrapper {
     margin-top: 36px;
@@ -36,7 +36,7 @@
 .value-line {
     border: none;
     height: 1px;
-    background: #97d28b;
+    background: var(--light-green);
     margin-top: 33px;
     margin-bottom: 12px;
 }

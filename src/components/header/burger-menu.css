@@ -5,6 +5,7 @@
     font-size: 24px;
     color: #fff;
     width: 320px;
+    padding: 24px;
     top: 36px;
     min-height: calc(100vh - 72px);
     bottom: 36px;
@@ -44,22 +45,20 @@
     align-items: center;
     gap: 4px;
     font-size: 20px;
-    margin-left: 19px;
-    margin-top: 24px;
+    margin-left: -5px;
     margin-bottom: 8px;
     cursor: pointer;
 }
 
 .close-menu:hover svg path {
-    stroke: #97D28B;
+    stroke: var(--light-green);
 }
 
 .close-menu:hover span {
-    color: #97D28B;
+    color: var(--light-green);
 }
 
 .menu-line{
-    width: 272px;
     height: 1px;
     background-color: #fff;
     margin: 0 auto
@@ -67,7 +66,6 @@
 
 .header .dropdown-menu ul {
     list-style: none;
-    margin-left: 24px;
     margin-top: 24px;
 }
 
@@ -82,15 +80,15 @@ li a {
 }
 
 .header .dropdown-menu ul li.active a span {
-    color: #97D28B;
+    color: var(--light-green);
 }
 
 .header .dropdown-menu ul li.active svg path {
-    stroke: #97D28B;
+    stroke: var(--light-green);
 }
 
 ul li.active a .active-svg {
-    stroke: #97D28B;
+    stroke: var(--light-green);
 }
 
 .header .dropdown-menu li span {
@@ -112,19 +110,18 @@ ul li.active a .active-svg {
 .header .dropdown-menu .menu-socials {
     display: flex;
     gap: 8px;
-    margin-left: 24px;
+    height: 24px;
     margin-bottom: 24px;
     position: absolute;
     bottom: 0;
 }
 
-.header .dropdown-menu .facebook:hover svg path,
-.header .dropdown-menu .instagram:hover svg path {
-    stroke: #97D28B;
+.header .dropdown-menu .menu-socials svg:hover path {
+    stroke: var(--light-green);
 }
 
-.header .dropdown-menu .facebook:hover svg path[fill] {
-    fill: #97D28B;
+.header .dropdown-menu .menu-socials svg:hover path[fill] {
+    fill: var(--light-green);
 }
 
 
@@ -137,6 +134,7 @@ ul li.active a .active-svg {
 @media (min-width: 1280px) {
 	.header .dropdown-menu {
 		right: 100px;
+        width: 365px;
         top: 24px;
         min-height: calc(100vh - 48px);
         bottom: 24px;

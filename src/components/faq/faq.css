@@ -1,6 +1,6 @@
 
 .aq-block{
-    border-top: 1px solid #97d28b;
+    border-top: 1px solid var(--light-green);
     padding: 16px 0 16px;
 }
 
@@ -49,11 +49,11 @@
 }
 
 .contact-us-icon:hover rect {
-    fill: #173d33;
+    fill: var(--dark-green);
 }
 
 .contact-us-icon:hover circle, .contact-us-icon:hover path {
-    fill: #97D28B;
+    fill: var(--light-green);
 }
 
 @media (min-width: 768px) {

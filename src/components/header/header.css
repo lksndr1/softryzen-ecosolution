@@ -28,7 +28,7 @@
 }
 
 .header-logo-img:hover #ecosolution {
-    fill: #97D28B;
+    fill: var(--light-green);
 }
 
 .burger-icon {
@@ -36,7 +36,7 @@
 }
 
 .burger-icon:hover rect {
-    fill: #97D28B;
+    fill: var(--light-green);
 }
 
 .getInTouch-icon {
@@ -48,15 +48,15 @@
 }
 
 .getInTouch-icon:hover rect {
-    fill: #173D33;
+    fill: var(--dark-green);
 }
 
 .getInTouch-icon:hover path {
-    fill: #97D28B;
+    fill: var(--light-green);
 }
 
 .getInTouch-icon:hover circle {
-    fill: #97D28B;
+    fill: var(--light-green);
 }
 
 @media (min-width: 768px) {

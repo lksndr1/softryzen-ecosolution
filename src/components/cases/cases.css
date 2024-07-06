@@ -8,7 +8,7 @@
     border: none;
     width: 1px;
     height: 65px;
-    background: #97d28b;
+    background:var(--light-green);
 }
 
 .slider-nav {
@@ -24,7 +24,7 @@
     font-size: 28px;
     letter-spacing: -0.04em;
     text-align: justify;
-    color: #173d33;
+    color: var(--dark-green);
 }
 
 .number-photos-grey {
@@ -44,7 +44,7 @@
 
 .arrow-left:hover svg path, .arrow-left:hover svg rect,
 .arrow-right:hover svg path, .arrow-right:hover svg rect {
-    stroke: #97D28B;
+    stroke: var(--light-green);
 }
 
 .slider-img {
@@ -60,11 +60,11 @@
 }
 
 .slider-arrow-icon:hover rect {
-    fill: #173D33; 
+    fill: var(--dark-green); 
 }
 
 .slider-arrow-icon:hover path {
-    stroke: #97D28B;
+    stroke: var(--light-green);
 }
 
 .slide-address-arrow {
@@ -87,7 +87,7 @@
     border: none;
     width: 100%;
     height: 1px;
-    background: #97d28b;
+    background: var(--light-green);
     margin-top: auto;
     margin-bottom: 0px;
 }
