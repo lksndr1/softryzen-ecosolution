@@ -97,7 +97,8 @@ p {
   .main-heading {
     font-size: 48px;
     letter-spacing: normal;
-    width: 300px;
+    width: 50%;
+    padding-right: 100px;
   }
 
   .description-wrapper {
@@ -139,11 +140,11 @@ p {
 
     .main-heading {
       font-size: 64px;
-      width: 485px;
+      width: 50%;
     }
 
     .description-wrapper {
-      padding-left: 137px;
+      padding-left: 161px;
     }
 
     .learn-more-wrapper {
@@ -156,7 +157,7 @@ p {
     }
 
     .email-copyright-wrapper {
-      padding: 0 0 0 137px;
+      padding-left: 161px;
       width: 50%;
     }
 

@@ -5,7 +5,7 @@ import ogImage from '../../img/wind-turbine-clean-energy.png';
 
 const Mainsec = () => {
     return (
-        <section className="mainsec">
+        <section id="main" className="mainsec">
             <div className="container mainsec-wrapper">
                 <div className="heading-wrapper">
                     <h1 className='main-heading'>RENEWABLE ENERGY For any task</h1>

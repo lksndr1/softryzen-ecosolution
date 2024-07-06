@@ -92,6 +92,7 @@
   @media (min-width: 1280px) {
     .faq-grid-container {
         margin-top: 120px;
+        grid-column-gap: 48px;
     }
 
     .faq-heading {

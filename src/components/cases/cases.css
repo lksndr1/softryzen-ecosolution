@@ -180,10 +180,16 @@
 @media (min-width: 1280px) {
     .cases-line{
         height: 96px;
+        margin: 0 24px;
     }
 
     .slider-nav {
         padding-left: 137px;
+    }
+
+    .arrow-left, .arrow-right {
+        width: 84px;
+        height: 84px;
     }
 
     .slider-container {

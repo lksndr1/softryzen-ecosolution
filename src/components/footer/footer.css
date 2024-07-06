@@ -1,6 +1,7 @@
 .footer-wrapper {
     margin: 36px 0 24px;
     border-top: 1px solid #97D28B;
+    position: relative;
 }
 
 .logo-topbth-wrapper {
@@ -10,11 +11,16 @@
     padding: 24px 0;
 }
 
-/* Do this style, btn is not centered. BUT IT NO HAVE STATIC PLACE */
-/* .to-top-btn {
-    
+.to-top-btn {
+    position: absolute;
+    right: 0px;
+    bottom: 165px;
+    cursor: pointer;
+    z-index: 999;
 }
-                              Hover
+
+/* 
+    -------                          --Hover----------------------------------------
 .to-top-btn:hover {
 
 }
@@ -60,6 +66,10 @@
         width: 50%;
     }
 
+    .to-top-btn {
+        bottom: 43px;
+    }
+
     .footer-socials {
         justify-content: left;
         padding-top: 4px;
@@ -94,5 +104,9 @@
 
     .footer-socials, .footer-email-copyrights {
         padding-left: 137px;
+    }
+
+    .footer-text {
+        gap: 48px;
     }
 }
