@@ -66,7 +66,7 @@ ul li.active a {
 }
 
 ul li.active a .menu-arrow {
-    fill: #97D28B;
+    stroke: #97D28B;
 }
 
 .header .dropdown-menu li span {
@@ -98,6 +98,11 @@ ul li.active a .menu-arrow {
 .header .dropdown-menu .instagram:hover svg path {
     stroke: #97D28B;
 }
+
+.header .dropdown-menu .facebook:hover svg path[fill] {
+    fill: #97D28B;
+}
+
 
 @media (min-width: 768px) {
 	.header .dropdown-menu {

@@ -13,6 +13,14 @@
     margin-bottom: 12px;
 }
 
+.img-value svg:hover path {
+    stroke: #97D28B;
+}
+
+.img-value svg:hover path[fill] {
+    fill: #97D28B;
+}
+
 .img-value p {
     font-size: 20px;
 }
@@ -94,6 +102,15 @@ input::placeholder, textarea::placeholder {
 
 .submit-wrapper button {
     height: 39px;
+}
+
+.send-icon:hover rect[stroke] {
+    fill: #173d33;
+    stroke: #173d33;
+}
+
+.send-icon:hover path[fill] {
+    fill: #97D28B;
 }
 
 @media (min-width: 768px) {

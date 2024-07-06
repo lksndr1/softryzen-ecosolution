@@ -23,17 +23,8 @@
     cursor: pointer;
 }
 
-/* Logo hover */
-.header-logo-hover {
-    display: none;
-}
-  
-.logo:hover .header-logo {
-    display: none;
-}
-  
-.logo:hover .header-logo-hover {
-    display: block;
+.header-logo-img:hover #ecosolution {
+    fill: #97D28B;
 }
 
 .burger-icon {

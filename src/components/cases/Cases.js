@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import './cases.css';
-
+import { ReactComponent as SliderArrow } from '../../img/slider-arrow.svg';
 import slide1 from '../../img/slide-1.png';
 import slide2 from '../../img/slide-2.png';
 import slide3 from '../../img/slide-3.png';
@@ -90,11 +90,7 @@ const Cases = () => {
                                     </div>
                                     <button className="slide-arrow">
                                         <a href={slide.href} target="_blank" rel="noopener noreferrer">
-                                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect width="60" height="60" rx="30" fill="#97D28B" />
-                                                <path d="M26.9976 22.9867L37.0125 22.9867L37.0125 33.0017" stroke="#173D33" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                                                <path d="M22.9888 37.0109L36.8728 23.1269" stroke="#173D33" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                                            </svg>
+                                            <SliderArrow className="slider-arrow-icon" />
                                         </a>
                                     </button>
                                 </div>

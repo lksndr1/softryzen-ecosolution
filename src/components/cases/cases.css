@@ -59,6 +59,14 @@
     padding: 24px 12px 0 12px;
 }
 
+.slider-arrow-icon:hover rect {
+    fill: #173D33; 
+}
+
+.slider-arrow-icon:hover path {
+    stroke: #97D28B;
+}
+
 .slide-address-arrow {
     display: flex;
     justify-content: space-between;

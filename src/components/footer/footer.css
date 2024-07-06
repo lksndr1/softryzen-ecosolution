@@ -4,6 +4,10 @@
     position: relative;
 }
 
+.footer-logo-img:hover #ecosolution {
+    fill: #97D28B;
+}
+
 .logo-topbth-wrapper {
     display: flex;
     justify-content: space-between;
@@ -19,17 +23,26 @@
     z-index: 999;
 }
 
-/* 
-    -------                          --Hover----------------------------------------
-.to-top-btn:hover {
-
+.to-top-btn svg:hover rect {
+    fill: #173D33;
 }
-*/
+
+.to-top-btn svg:hover path {
+    stroke: #97D28B;
+}
 
 .footer-socials {
     display: flex;
     gap: 8px;
     justify-content: center;
+}
+
+.footer-socials svg:hover path {
+    stroke: #97D28B;
+}
+
+.footer-socials svg:hover path[fill] {
+    fill: #97D28B;
 }
 
 .footer-text {
@@ -100,6 +113,10 @@
 @media (min-width: 1280px) {
     .footer-wrapper {
         margin: 120px 0 40px;
+    }
+
+    .logo-socials {
+        gap: 48px;
     }
 
     .footer-socials, .footer-email-copyrights {

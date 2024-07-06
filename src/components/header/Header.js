@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../img/logo.svg';
-import logoHover from '../../img/logo-hover.svg';
+import { ReactComponent as Logo } from '../../img/logo.svg';
+// import logo from '../../img/logo.svg';
+// import logoHover from '../../img/logo-hover.svg';
 import { ReactComponent as GetInTouch } from '../../img/get-in-t.svg';
 import { ReactComponent as MenuArrow } from '../../img/menuArrow.svg';
 import { ReactComponent as Burger } from '../../img/burger.svg';
@@ -59,16 +60,15 @@ const Header = () => {
             <div className="container">
                 <div className="header-row">
                     <div className="logo">
-                        <img src={logo} alt="Logo" className="header-logo" />
-                        <img src={logoHover} alt="Logo Hover" className="header-logo-hover" />
+                        <Logo className="header-logo-img" />
                     </div>
                     <div className="header-menu">
                         <div className="burger-wrapper" onClick={toggleMenu}>
                             <Burger className="burger-icon"/>
                         </div>
-                        <a href="#contact-us" onClick={(e) => scrollToSection(e, 'contact-us')}>
+                        <button onClick={(e) => scrollToSection(e, 'contact-us')}>
                             <GetInTouch className="getInTouch-icon" />
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -82,37 +82,37 @@ const Header = () => {
                         </button>
                         <div className="menu-line"></div>
                         <ul>
-                        <li className={activeSection === 'main' ? 'active' : ''}>
-                            <a href="#main" onClick={(e) => scrollToSection(e, 'main')}>
-                                <span>Main</span>
-                                <MenuArrow className={`menu-arrow ${activeSection === 'main' ? 'active-svg' : ''}`} />
-                            </a>
-                        </li>
-                        <li className={activeSection === 'about' ? 'active' : ''}>
-                            <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>
-                                <span>About</span>
-                                <MenuArrow className={`menu-arrow ${activeSection === 'about' ? 'active-svg' : ''}`} />
-                            </a>
-                        </li>
-                        <li className={activeSection === 'cases' ? 'active' : ''}>
-                            <a href="#cases" onClick={(e) => scrollToSection(e, 'cases')}>
-                                <span>Cases</span>
-                                <MenuArrow className={`menu-arrow ${activeSection === 'cases' ? 'active-svg' : ''}`} />
-                            </a>
-                        </li>
-                        <li className={activeSection === 'faq' ? 'active' : ''}>
-                            <a href="#faq" onClick={(e) => scrollToSection(e, 'faq')}>
-                                <span>FAQ</span>
-                                <MenuArrow className={`menu-arrow ${activeSection === 'faq' ? 'active-svg' : ''}`} />
-                            </a>
-                        </li>
-                        <li className={activeSection === 'contact-us' ? 'active' : ''}>
-                            <a href="#contact-us" onClick={(e) => scrollToSection(e, 'contact-us')}>
-                                <span>Contact Us</span>
-                                <MenuArrow className={`menu-arrow ${activeSection === 'contact-us' ? 'active-svg' : ''}`} />
-                            </a>
-                        </li>
-                    </ul>
+                            <li className={activeSection === 'main' ? 'active' : ''}>
+                                <a href="#main" onClick={(e) => scrollToSection(e, 'main')}>
+                                    <span>Main</span>
+                                    <MenuArrow className={`menu-arrow ${activeSection === 'main' ? 'active-svg' : ''}`} />
+                                </a>
+                            </li>
+                            <li className={activeSection === 'about' ? 'active' : ''}>
+                                <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>
+                                    <span>About</span>
+                                    <MenuArrow className={`menu-arrow ${activeSection === 'about' ? 'active-svg' : ''}`} />
+                                </a>
+                            </li>
+                            <li className={activeSection === 'cases' ? 'active' : ''}>
+                                <a href="#cases" onClick={(e) => scrollToSection(e, 'cases')}>
+                                    <span>Cases</span>
+                                    <MenuArrow className={`menu-arrow ${activeSection === 'cases' ? 'active-svg' : ''}`} />
+                                </a>
+                            </li>
+                            <li className={activeSection === 'faq' ? 'active' : ''}>
+                                <a href="#faq" onClick={(e) => scrollToSection(e, 'faq')}>
+                                    <span>FAQ</span>
+                                    <MenuArrow className={`menu-arrow ${activeSection === 'faq' ? 'active-svg' : ''}`} />
+                                </a>
+                            </li>
+                            <li className={activeSection === 'contact-us' ? 'active' : ''}>
+                                <a href="#contact-us" onClick={(e) => scrollToSection(e, 'contact-us')}>
+                                    <span>Contact Us</span>
+                                    <MenuArrow className={`menu-arrow ${activeSection === 'contact-us' ? 'active-svg' : ''}`} />
+                                </a>
+                            </li>
+                        </ul>
                         <div className="menu-socials">
                             <div className="facebook">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
