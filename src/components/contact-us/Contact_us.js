@@ -66,7 +66,7 @@ const Contact_us = () => {
   };
 
   return (
-    <section className="contact-us">
+    <section id="contact-us" className="contact-us">
       <div className="container">
         <h2 className="contact-us-heading">Contact us</h2>
         <div className="contacts-form-wrapper">

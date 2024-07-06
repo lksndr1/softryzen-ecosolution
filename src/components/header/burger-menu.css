@@ -54,18 +54,35 @@
 .header .dropdown-menu li {
     margin-top: 8px;
     cursor: pointer;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+li a {
+    color: inherit;
+}
+
+ul li.active a {
+    color: #97D28B;
+}
+
+ul li.active a .menu-arrow {
+    fill: #97D28B;
 }
 
 .header .dropdown-menu li span {
     margin-right: 8px;
 }
 
+.header .dropdown-menu li svg path {
+    stroke: rgba(255, 255, 255, 0.25);
+}
+
 .header .dropdown-menu li:hover svg path {
-    stroke: #97D28B;
+    stroke: #fff;
 }
 
 .header .dropdown-menu li:hover span {
-    color: #97D28B;
+    color: #fff;
 }
 
 .header .dropdown-menu .menu-socials {

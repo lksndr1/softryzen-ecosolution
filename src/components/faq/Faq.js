@@ -34,7 +34,7 @@ const Faq = () => {
     ];
 
     return (
-        <section className="faq">
+        <section id="faq" className="faq">
             <div className="container">
                 <div className="faq-grid-container">
                     <h2 className="faq-heading">Frequently Asked Questions</h2>

@@ -60,14 +60,17 @@ input {
 }
 
 .error-input input {
-  border-color: #d28b8b;;
+  border-color: #d28b8b;
+  margin-bottom: 0;
 }
 
 textarea {
+    resize: none;
     height: 155px;
     border-bottom: 1px solid #97d28b;
     padding-top: 8px;
     margin-bottom: 16px;
+    
 }
 
 input::placeholder, textarea::placeholder {

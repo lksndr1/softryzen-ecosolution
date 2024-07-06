@@ -29,16 +29,17 @@ p {
     justify-content: center;
 }
 
-.learn-more-icon-hover {
-  display: none;
+.learn-more-icon {
+  cursor: pointer;
 }
 
-.learn-more-wrapper:hover .learn-more-icon {
-  display: none;
+.learn-more-icon:hover rect[stroke] {
+  fill: #173d33;
+  stroke: #173d33;
 }
 
-.learn-more-wrapper:hover .learn-more-icon-hover {
-  display: block;
+.learn-more-icon:hover path {
+  fill: #97d28b;
 }
 
 .green-line {

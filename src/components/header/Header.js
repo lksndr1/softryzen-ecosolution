@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../../img/logo.svg';
 import logoHover from '../../img/logo-hover.svg';
-import burger from '../../img/burger.svg';
-import burgerHover from '../../img/burger-hover.svg';
-import getInT from '../../img/get-in-t.svg';
-import getInTHover from '../../img/get-in-t-hover.svg';
+import { ReactComponent as GetInTouch } from '../../img/get-in-t.svg';
+import { ReactComponent as MenuArrow } from '../../img/menuArrow.svg';
+import { ReactComponent as Burger } from '../../img/burger.svg';
 import './header.css';
 import './burger-menu.css';
 
 const Header = () => {
-
     // Burger-menu
     const [menuOpen, setMenuOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState('');
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -20,7 +19,6 @@ const Header = () => {
     const closeMenu = () => {
         setMenuOpen(false);
     };
-
 
     // Changed header colour on scroll;
     useEffect(() => {
@@ -40,6 +38,22 @@ const Header = () => {
         };
     }, []);
 
+    // Scroll to section by menu, scroll to section contact-us by Get-in-touch
+    const scrollToSection = (e, sectionId) => {
+        e.preventDefault();
+        const section = document.getElementById(sectionId);
+        if (sectionId === 'contact-us') {
+            window.scrollTo({
+                top: section.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        } else if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+        closeMenu();
+        setActiveSection(sectionId);
+    };
+
     return (
         <header className={`header ${menuOpen ? 'menu-open' : ''}`}>
             <div className="container">
@@ -50,18 +64,14 @@ const Header = () => {
                     </div>
                     <div className="header-menu">
                         <div className="burger-wrapper" onClick={toggleMenu}>
-                            <img src={burger} alt="burger icon" className="burger-icon" />
-                            <img src={burgerHover} alt="burger icon" className="burger-icon-hover" />
+                            <Burger className="burger-icon"/>
                         </div>
-                        <div className="getInTouch-wrapper">
-                            <img src={getInT} alt="Get In Touch" className="getInTouch" />
-                            <img src={getInTHover} alt="Get In Touch" className="getInTouch-hover" />
-                        </div>
+                        <a href="#contact-us" onClick={(e) => scrollToSection(e, 'contact-us')}>
+                            <GetInTouch className="getInTouch-icon" />
+                        </a>
                     </div>
                 </div>
 
-
-        {/* Menu list for burger-menu */}
                 {menuOpen && (
                     <div className="dropdown-menu">
                         <button className="close-menu" onClick={closeMenu}>
@@ -72,42 +82,37 @@ const Header = () => {
                         </button>
                         <div className="menu-line"></div>
                         <ul>
-                            <li>
+                        <li className={activeSection === 'main' ? 'active' : ''}>
+                            <a href="#main" onClick={(e) => scrollToSection(e, 'main')}>
                                 <span>Main</span>
-                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.28418 3.49219L11.007 3.49219L11.007 9.21504" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M2.99365 11.5061L10.9274 3.57237" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </li>
-                            <li>
+                                <MenuArrow className={`menu-arrow ${activeSection === 'main' ? 'active-svg' : ''}`} />
+                            </a>
+                        </li>
+                        <li className={activeSection === 'about' ? 'active' : ''}>
+                            <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>
                                 <span>About</span>
-                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.28418 3.49219L11.007 3.49219L11.007 9.21504" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M2.99365 11.5061L10.9274 3.57237" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </li>
-                            <li>
+                                <MenuArrow className={`menu-arrow ${activeSection === 'about' ? 'active-svg' : ''}`} />
+                            </a>
+                        </li>
+                        <li className={activeSection === 'cases' ? 'active' : ''}>
+                            <a href="#cases" onClick={(e) => scrollToSection(e, 'cases')}>
                                 <span>Cases</span>
-                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.28418 3.49219L11.007 3.49219L11.007 9.21504" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M2.99365 11.5061L10.9274 3.57237" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </li>
-                            <li>
+                                <MenuArrow className={`menu-arrow ${activeSection === 'cases' ? 'active-svg' : ''}`} />
+                            </a>
+                        </li>
+                        <li className={activeSection === 'faq' ? 'active' : ''}>
+                            <a href="#faq" onClick={(e) => scrollToSection(e, 'faq')}>
                                 <span>FAQ</span>
-                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.28418 3.49219L11.007 3.49219L11.007 9.21504" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M2.99365 11.5061L10.9274 3.57237" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </li>
-                            <li>
+                                <MenuArrow className={`menu-arrow ${activeSection === 'faq' ? 'active-svg' : ''}`} />
+                            </a>
+                        </li>
+                        <li className={activeSection === 'contact-us' ? 'active' : ''}>
+                            <a href="#contact-us" onClick={(e) => scrollToSection(e, 'contact-us')}>
                                 <span>Contact Us</span>
-                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.28418 3.49219L11.007 3.49219L11.007 9.21504" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M2.99365 11.5061L10.9274 3.57237" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </li>
-                        </ul>
+                                <MenuArrow className={`menu-arrow ${activeSection === 'contact-us' ? 'active-svg' : ''}`} />
+                            </a>
+                        </li>
+                    </ul>
                         <div className="menu-socials">
                             <div className="facebook">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -123,12 +128,11 @@ const Header = () => {
                                 </svg>
                             </div>
                         </div>
-                        
                     </div>
                 )}
             </div>
         </header>
     );
-}
- 
+};
+
 export default Header;

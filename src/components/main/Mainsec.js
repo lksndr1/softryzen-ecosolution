@@ -1,9 +1,17 @@
+import { ReactComponent as LearnMore } from '../../img/learn-more.svg';
 import './mainsec.css';
-import learnMore from '../../img/learn-more.svg';
-import learnMoreHover from '../../img/learn-more-hover.svg';
 import ogImage from '../../img/wind-turbine-clean-energy.png';
 
 const Mainsec = () => {
+
+    const scrollToCases = (e) => {
+        e.preventDefault();
+        const casesSection = document.getElementById('cases');
+        if (casesSection) {
+            casesSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <section id="main" className="mainsec">
             <div className="container mainsec-wrapper">
@@ -12,9 +20,8 @@ const Mainsec = () => {
                     <div className="description-wrapper">
                         <p>Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass</p>
                         <div className="learn-more-wrapper">
-                            <a href="#" className="learn-more-btn">
-                                <img className="learn-more-icon" src={learnMore} alt="Learn-more-button" />
-                                <img className="learn-more-icon-hover" src={learnMoreHover} alt="Learn-more-button" />
+                            <a href="#" className="learn-more-btn" onClick={scrollToCases}>
+                                <LearnMore className="learn-more-icon"/>
                             </a>
                         </div>
                     </div>

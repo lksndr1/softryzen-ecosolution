@@ -4,7 +4,7 @@ import wind from '../../img/wind-farms-fields1.png'
 
 const About = () => {
     return (
-        <section className="about">
+        <section id="about" className="about">
             <div className="container">
                 <div className="info-wrapper">
                     <h2 className="about-heading">Main values of our company</h2>

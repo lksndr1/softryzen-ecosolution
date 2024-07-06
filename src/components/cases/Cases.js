@@ -48,7 +48,7 @@ const Cases = () => {
     });
 
     return (
-        <section className="cases">
+        <section id="cases" className="cases">
             <div className="container">
                 <div className="cases-flex-container">
                     <h2 className="cases-heading">Successful cases of our company</h2>

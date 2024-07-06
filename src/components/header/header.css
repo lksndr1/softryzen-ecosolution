@@ -36,49 +36,37 @@
     display: block;
 }
 
-.getInTouch {
+.burger-icon {
+    cursor: pointer;
+}
+
+.burger-icon:hover rect {
+    fill: #97D28B;
+}
+
+.getInTouch-icon {
     display: none;
 }
 
-.getInTouch, .getInTouch-hover {
+.getInTouch-icon {
     margin-left: 12px;
     cursor: pointer;
 }
 
-/* Get in touch hover */
-.getInTouch-hover {
-    display: none;
+.getInTouch-icon:hover rect {
+    fill: #173D33;
 }
 
-.getInTouch-wrapper:hover .getInTouch {
-    display: none;
+.getInTouch-icon:hover path {
+    fill: #97D28B;
 }
 
-.getInTouch-wrapper:hover .getInTouch-hover {
-    display: block;
+.getInTouch-icon:hover circle {
+    fill: #97D28B;
 }
-
-.burger-wrapper {
-    cursor: pointer;
-}
-
-/* Burger-menu hover */
-.burger-icon-hover {
-    display: none;
-}
-
-.burger-wrapper:hover .burger-icon {
-    display: none;
-}
-
-.burger-wrapper:hover .burger-icon-hover {
-    display: block;
-}
-
-
 
 @media (min-width: 768px) {
-    .getInTouch {
+    .getInTouch-icon {
       display: block;
     }
 }
