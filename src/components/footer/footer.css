@@ -1,0 +1,98 @@
+.footer-wrapper {
+    margin: 36px 0 24px;
+    border-top: 1px solid #97D28B;
+}
+
+.logo-topbth-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+/* Do this style, btn is not centered. BUT IT NO HAVE STATIC PLACE */
+/* .to-top-btn {
+    
+}
+                              Hover
+.to-top-btn:hover {
+
+}
+*/
+
+.footer-socials {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.footer-text {
+    margin-top: 24px;
+}
+
+.footer-email {
+    margin: 16px 0;
+}
+
+.footer-address, .footer-email-copyrights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-wrapper {
+        margin: 100px 0 40px;
+    }
+
+    .logo-topbth-wrapper {
+        padding: 0;
+    }
+
+    .logo-socials {
+        display: flex;
+        gap: 24px;
+        margin-top: 40px;
+    }
+
+    .logo-topbth-wrapper, .footer-socials {
+        width: 50%;
+    }
+
+    .footer-socials {
+        justify-content: left;
+        padding-top: 4px;
+    }
+
+    .footer-text {
+        display: flex;
+        gap: 24px;
+        margin-top: 16px;
+    }
+
+    .footer-address {
+        width: 50%;
+        align-items: start;
+    }
+
+    .footer-email-copyrights {
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-email {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .footer-wrapper {
+        margin: 120px 0 40px;
+    }
+
+    .footer-socials, .footer-email-copyrights {
+        padding-left: 137px;
+    }
+}

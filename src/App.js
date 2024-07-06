@@ -6,6 +6,7 @@ import Electricity from './components/electricity/Electricity';
 import Cases from './components/cases/Cases';
 import Faq from './components/faq/Faq';
 import Contact_us from './components/contact-us/Contact_us';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Cases />
       <Faq />
       <Contact_us />
-      
+      <Footer />
     </div>
   );
 }
