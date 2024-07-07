@@ -7,7 +7,7 @@ import './header.css';
 import './burger-menu.css';
 
 const Header = () => {
-    // Burger-menu
+    // Burger-menu close/open
     const [menuOpen, setMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('');
 
@@ -23,19 +23,19 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
             const header = document.querySelector('.header');
-            if (window.scrollY > 0) {
-                header.classList.add('scrolled');
-            } else {
+            if (window.scrollY === 0) {
                 header.classList.remove('scrolled');
+            } else {
+                header.classList.add('scrolled');
             }
         };
-
+    
         window.addEventListener('scroll', handleScroll);
-
+    
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, []);    
 
     // Scroll to section by menu, scroll to section contact-us by Get-in-touch
     const scrollToSection = (e, sectionId) => {
