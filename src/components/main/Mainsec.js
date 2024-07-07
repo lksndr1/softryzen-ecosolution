@@ -4,13 +4,25 @@ import ogImage from '../../img/wind-turbine-clean-energy.png';
 
 const Mainsec = () => {
 
+    // const scrollToCases = (e) => {
+    //     e.preventDefault();
+    //     const casesSection = document.getElementById('cases');
+    //     if (casesSection) {
+    //         casesSection.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    // };
+
     const scrollToCases = (e) => {
         e.preventDefault();
         const casesSection = document.getElementById('cases');
         if (casesSection) {
-            casesSection.scrollIntoView({ behavior: 'smooth' });
+            const y = casesSection.getBoundingClientRect().top + window.pageYOffset -130;
+            window.scrollTo({
+                top: y, behavior: 'smooth'
+            });
         }
     };
+    
 
     return (
         <section id="main" className="mainsec">
