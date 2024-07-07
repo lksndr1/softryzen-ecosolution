@@ -41,13 +41,11 @@ const Header = () => {
     const scrollToSection = (e, sectionId) => {
         e.preventDefault();
         const section = document.getElementById(sectionId);
-        if (sectionId === 'contact-us') {
+        if (section) {
             window.scrollTo({
-                top: section.offsetTop - 80,
+                top: section.offsetTop - 130,
                 behavior: 'smooth'
             });
-        } else if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
         }
         closeMenu();
         setActiveSection(sectionId);

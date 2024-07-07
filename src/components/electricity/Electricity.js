@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './electricity.css';
 
 const Electricity = () => {
-    const [counter, setCounter] = useState(1134147814); // start value can be changed on, for example today year-day-hour-minute-seconds. it be imitate true value production for multiple visit web-site
+    const [counter, setCounter] = useState(1134147814); // start value can be changed on, for example today year-day-hour-minute-seconds. it be imitate true value production for multiple visit web-site or refresh
 
     useEffect(() => {
         const interval = setInterval(() => {
