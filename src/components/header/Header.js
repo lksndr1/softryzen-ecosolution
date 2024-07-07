@@ -50,6 +50,30 @@ const Header = () => {
         closeMenu();
         setActiveSection(sectionId);
     };
+    // Change colour of menu-item by handle scroll
+    const handleScroll = () => {
+        const sections = document.querySelectorAll('section');
+        let currentSectionId = '';
+
+        sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= 250 && rect.bottom >= 250) {
+                currentSectionId = section.id;
+            }
+        });
+
+        if (currentSectionId) {
+            setActiveSection(currentSectionId);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <header className={`header ${menuOpen ? 'menu-open' : ''}`}>

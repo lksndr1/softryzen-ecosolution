@@ -11,11 +11,11 @@ import slide5 from '../../img/slide-5.png';
 const Cases = () => {
     // Slider-Cards img and Text
     const slides = [
-        { img: slide1, slide_address: "Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”", slide_type: "Wind Power for auto field irrigation", slide_date: "July 2023", href: '#first' },
-        { img: slide2, slide_address: "Zhytomyr city Private Enterprise “Bosch”", slide_type: "Solar Panels for industrial use", slide_date: "November 2023", href: '#second' },
-        { img: slide3, slide_address: "Rivne city Private Enterprise “Biotech”", slide_type: "Thermal modules", slide_date: "October 2023", href: '#third' },
-        { img: slide4, slide_address: "Kherson city Private Enterprise “HealthyFarm”", slide_type: "Wind power", slide_date: "September 2021", href: '#fourth' },
-        { img: slide5, slide_address: "Zaporizhia city Private Enterprise “Biotech”", slide_type: "Mini nuclear stations", slide_date: "May 2021", href: '#fifth' },
+        { img: slide1, slide_address: "Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”", slide_type: "Wind Power for auto field irrigation", slide_date: "July 2023", href: 'first' },
+        { img: slide2, slide_address: "Zhytomyr city Private Enterprise “Bosch”", slide_type: "Solar Panels for industrial use", slide_date: "November 2023", href: 'second' },
+        { img: slide3, slide_address: "Rivne city Private Enterprise “Biotech”", slide_type: "Thermal modules", slide_date: "October 2023", href: 'third' },
+        { img: slide4, slide_address: "Kherson city Private Enterprise “HealthyFarm”", slide_type: "Wind power", slide_date: "September 2021", href: 'fourth' },
+        { img: slide5, slide_address: "Zaporizhia city Private Enterprise “Biotech”", slide_type: "Mini nuclear stations", slide_date: "May 2021", href: 'fifth' },
     ];
 
     // Switched between one or two slides-card on page
