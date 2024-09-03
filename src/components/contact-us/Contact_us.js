@@ -179,7 +179,7 @@ const Contact_us = () => {
                     </div>
                     <div className="submit-wrapper">
                         <button type="submit">
-                            <SendBtn className="send-icon" />
+                            <SendBtn className="send-icon" tabindex="0"/>
                         </button>
                     </div>
                 </form>

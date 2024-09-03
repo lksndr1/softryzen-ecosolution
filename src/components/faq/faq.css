@@ -48,11 +48,13 @@
     height: 39px;
 }
 
-.contact-us-icon:hover rect {
+.contact-us-icon:hover rect,
+.contact-us-icon:focus rect {
     fill: var(--dark-green);
 }
 
-.contact-us-icon:hover circle, .contact-us-icon:hover path {
+.contact-us-icon:hover circle, .contact-us-icon:hover path,
+.contact-us-icon:focus circle, .contact-us-icon:focus path {
     fill: var(--light-green);
 }
 

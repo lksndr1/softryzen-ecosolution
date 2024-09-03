@@ -33,12 +33,14 @@ p {
   cursor: pointer;
 }
 
-.learn-more-icon:hover rect[stroke] {
+.learn-more-icon:hover rect[stroke],
+.learn-more-icon:focus rect[stroke] {
   fill: var(--dark-green);;
   stroke: var(--dark-green);;
 }
 
-.learn-more-icon:hover path {
+.learn-more-icon:hover path,
+.learn-more-icon:focus path {
   fill: var(--light-green);
 }
 

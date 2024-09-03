@@ -43,7 +43,9 @@
 }
 
 .arrow-left:hover svg path, .arrow-left:hover svg rect,
-.arrow-right:hover svg path, .arrow-right:hover svg rect {
+.arrow-right:hover svg path, .arrow-right:hover svg rect,
+.arrow-left:focus svg path, .arrow-left:focus svg rect,
+.arrow-right:focus svg path, .arrow-right:focus svg rect {
     stroke: var(--light-green);
 }
 
@@ -59,11 +61,13 @@
     padding: 24px 12px 0 12px;
 }
 
-.slider-arrow-icon:hover rect {
+.slider-arrow-icon:hover rect,
+.slider-arrow-icon:focus rect {
     fill: var(--dark-green); 
 }
 
-.slider-arrow-icon:hover path {
+.slider-arrow-icon:hover path,
+.slider-arrow-icon:focus path {
     stroke: var(--light-green);
 }
 

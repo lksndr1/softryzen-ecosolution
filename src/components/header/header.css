@@ -26,7 +26,12 @@
     cursor: pointer;
 }
 
-.header-logo-img:hover #ecosolution {
+.header-logo-img #ecosolution {
+    transition: fill 0.3s ease;
+}
+
+.header-logo-img:hover #ecosolution,
+.header-logo-img:focus #ecosolution {
     fill: var(--light-green);
 }
 
@@ -34,7 +39,8 @@
     cursor: pointer;
 }
 
-.burger-icon:hover rect {
+.burger-icon:hover rect,
+.burger-icon:focus rect {
     fill: var(--light-green);
 }
 
@@ -46,15 +52,18 @@
     cursor: pointer;
 }
 
-.getInTouch-icon:hover rect {
+.getInTouch-icon:hover rect,
+.getInTouch-icon:focus rect {
     fill: var(--dark-green);
 }
 
-.getInTouch-icon:hover path {
+.getInTouch-icon:hover path,
+.getInTouch-icon:focus path {
     fill: var(--light-green);
 }
 
-.getInTouch-icon:hover circle {
+.getInTouch-icon:hover circle,
+.getInTouch-icon:focus circle {
     fill: var(--light-green);
 }
 

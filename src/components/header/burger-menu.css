@@ -51,11 +51,13 @@
     cursor: pointer;
 }
 
-.close-menu:hover svg path {
+.close-menu:hover svg path,
+.close-menu:focus svg path {
     stroke: var(--light-green);
 }
 
-.close-menu:hover span {
+.close-menu:hover span,
+.close-menu:focus span {
     color: var(--light-green);
 }
 
@@ -100,11 +102,13 @@ ul li.active a .active-svg {
     stroke: rgba(255, 255, 255, 0.25);
 }
 
-.header .dropdown-menu li:hover svg path {
+.header .dropdown-menu li:hover svg path,
+.header .dropdown-menu li:focus svg path {
     stroke: #fff;
 }
 
-.header .dropdown-menu li:hover span {
+.header .dropdown-menu li:hover span,
+.header .dropdown-menu li:focus span {
     color: #fff;
 }
 
@@ -117,11 +121,13 @@ ul li.active a .active-svg {
     bottom: 0;
 }
 
-.header .dropdown-menu .menu-socials svg:hover path {
+.header .dropdown-menu .menu-socials svg:hover path,
+.header .dropdown-menu .menu-socials svg:focus path {
     stroke: var(--light-green);
 }
 
-.header .dropdown-menu .menu-socials svg:hover path[fill] {
+.header .dropdown-menu .menu-socials svg:hover path[fill],
+.header .dropdown-menu .menu-socials svg:focus path[fill] {
     fill: var(--light-green);
 }
 

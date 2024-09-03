@@ -33,7 +33,7 @@ const Mainsec = () => {
                         <p>Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass</p>
                         <div className="learn-more-wrapper">
                             <button className="learn-more-btn" onClick={scrollToCases}>
-                                <LearnMore className="learn-more-icon"/>
+                                <LearnMore className="learn-more-icon" tabindex="0"/>
                             </button>
                         </div>
                     </div>

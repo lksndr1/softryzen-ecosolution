@@ -76,7 +76,7 @@ const Faq = () => {
                     <div className="faq-contact-us">
                         <p>Didn't find the answer to your question?</p>
                         <button className="faq-contact-us-button" onClick={scrollToContactUs}>
-                            <ContactIcon className="contact-us-icon" />
+                            <ContactIcon className="contact-us-icon" tabindex="0"/>
                         </button>
                     </div>
                 </div>
