@@ -20,7 +20,7 @@ const Footer = () => {
                             <div className="footer-logo">
                                 <Logo className="footer-logo-img" tabindex="0"/>
                             </div>
-                            <button className="to-top-btn" onClick={scrollToTop}>
+                            <button aria-label="To top" type="button" className="to-top-btn" onClick={scrollToTop}>
                                 <svg tabindex="0" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect y="32" width="32" height="32" rx="16" transform="rotate(-90 0 32)" fill="#97D28B" />
                                     <path d="M11.9531 14.3799L15.9998 10.3332L20.0465 14.3799" stroke="#173D33" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />

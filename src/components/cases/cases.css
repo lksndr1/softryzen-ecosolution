@@ -37,6 +37,7 @@
 }
 
 .arrow-left, .arrow-right {
+    display: inline-block;
     width: 66px;
     height: 66px;
     cursor: pointer;
@@ -76,8 +77,12 @@
     justify-content: space-between;
 }
 
-.slide-address{
+.slide-address {
     width: 175px;
+}
+
+.slide-arrow {
+    display: inline-block;
 }
 
 .slide-address p {

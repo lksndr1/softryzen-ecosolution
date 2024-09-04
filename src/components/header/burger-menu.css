@@ -42,6 +42,7 @@
 }
 
 .header .close-menu {
+    display: inline-block;
     display: flex;
     align-items: center;
     gap: 4px;

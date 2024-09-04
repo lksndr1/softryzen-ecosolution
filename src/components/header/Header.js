@@ -85,7 +85,7 @@ const Header = () => {
                     </div>
                     <div className="header-menu">
                             <Burger className="burger-icon" onClick={toggleMenu} tabindex="0"/>
-                        <button onClick={(e) => scrollToSection(e, 'contact-us')}>
+                        <button aria-label="Get in touch" type="button" onClick={(e) => scrollToSection(e, 'contact-us')}>
                             <GetInTouch className="getInTouch-icon" tabindex="0"/>
                         </button>
                     </div>
@@ -93,7 +93,7 @@ const Header = () => {
 
                 {menuOpen && (
                     <div className="dropdown-menu">
-                        <button className="close-menu" onClick={closeMenu}>
+                        <button type="button" aria-label="Close" className="close-menu" onClick={closeMenu}>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" tabindex="0">
                                 <path d="M5.8335 5.83331L14.1668 14.1666M5.8335 14.1666L14.1668 5.83331" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>

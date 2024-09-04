@@ -58,14 +58,14 @@ const Cases = () => {
                             <p>{String(currentSlide + 1).padStart(2, '0')} <span className="number-photos-grey">/{String(slides.length).padStart(2, '0')}</span></p>
                         </div>
                         <div className="arrows">
-                            <button className="arrow-left" onClick={prevSlide}>
+                            <button type="button" aria-label="Previous slide" className="arrow-left" onClick={prevSlide}>
                                 <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="-0.5" y="0.5" width="83" height="83" rx="41.5" transform="matrix(-1 0 0 1 83 0)" stroke="#173D33"/>
                                     <path d="M38.3543 32.8935L29.2493 41.9985L38.3543 51.1035" stroke="#173D33" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                                     <path d="M54.7491 41.9989H29.5041" stroke="#173D33" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
                                 </svg>
                             </button>
-                            <button className="arrow-right" onClick={nextSlide}>
+                            <button type="button" aria-label="Next slide" className="arrow-right" onClick={nextSlide}>
                                 <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg" transform="scale(-1, 1)">
                                     <rect x="-0.5" y="0.5" width="83" height="83" rx="41.5" transform="matrix(-1 0 0 1 83 0)" stroke="#173D33"/>
                                     <path d="M38.3543 32.8935L29.2493 41.9985L38.3543 51.1035" stroke="#173D33" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
@@ -88,7 +88,7 @@ const Cases = () => {
                                     <div className="slide-address">
                                         <p>{slide.slide_address}</p>
                                     </div>
-                                    <button className="slide-arrow">
+                                    <button type="button" aria-label="Go to slide" className="slide-arrow">
                                         <a href={slide.href} target="_blank" rel="noopener noreferrer">
                                             <SliderArrow className="slider-arrow-icon" />
                                         </a>

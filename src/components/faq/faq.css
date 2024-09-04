@@ -45,6 +45,7 @@
 }
 
 .faq-contact-us button {
+    display: inline-block;
     height: 39px;
 }
 

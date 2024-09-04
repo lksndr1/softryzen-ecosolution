@@ -178,7 +178,7 @@ const Contact_us = () => {
                         />
                     </div>
                     <div className="submit-wrapper">
-                        <button type="submit">
+                        <button aria-label="Submit form" type="submit">
                             <SendBtn className="send-icon" tabindex="0"/>
                         </button>
                     </div>

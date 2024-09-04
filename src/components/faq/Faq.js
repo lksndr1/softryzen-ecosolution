@@ -75,7 +75,7 @@ const Faq = () => {
                     </div>
                     <div className="faq-contact-us">
                         <p>Didn't find the answer to your question?</p>
-                        <button className="faq-contact-us-button" onClick={scrollToContactUs}>
+                        <button type="button" aria-label="Contact us" className="faq-contact-us-button" onClick={scrollToContactUs}>
                             <ContactIcon className="contact-us-icon" tabindex="0"/>
                         </button>
                     </div>

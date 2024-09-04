@@ -103,6 +103,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .submit-wrapper button {
+    display: inline-block;
     height: 39px;
 }
 
